@@ -1,0 +1,11 @@
+Cube.cmi: geometry.cmi
+geometry.cmi:
+Solver.cmi: Cube.cmi
+Cube.cmo: geometry.cmi Cube.cmi
+Cube.cmx: geometry.cmx Cube.cmi
+geometry.cmo: geometry.cmi
+geometry.cmx: geometry.cmi
+main.cmo: Solver.cmi geometry.cmi Cube.cmi
+main.cmx: Solver.cmx geometry.cmx Cube.cmx
+Solver.cmo: Cube.cmi Solver.cmi
+Solver.cmx: Cube.cmx Solver.cmi
